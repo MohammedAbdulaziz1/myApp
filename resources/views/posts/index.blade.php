@@ -32,7 +32,7 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Title</th>
+            <th scope="col">PepsiMan</th>
             <th scope="col">Posted By</th>
             <th scope="col">Created At</th>
             <th scope="col">Action</th>
