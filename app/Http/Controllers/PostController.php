@@ -79,6 +79,7 @@ class PostController extends Controller
         Post::create([
             'title' => $title,
             'description' => $description,
+            'user_id' => $postCreator,
         ]);
        
         return to_route('posts.index');
@@ -106,6 +107,7 @@ class PostController extends Controller
                $singlePostsFromDB->update([   //update post
                     'title' => $title,
                     'description' => $description,
+                    'user_id' => $postCreator,
                ]);
         
        return to_route('posts.show',$postId);
