@@ -6,7 +6,7 @@
         <h5 class="card-header">Post Info</h5>
         <div class="card-body">
           <h5 class="card-title">Title : {{$post->title}}</h5>
-          <p class="card-text">Discription : {{$post->Discription}}</p>
+          <p class="card-text">Description : {{$post->description}}</p>
         </div>
       </div>
       <div class="card">
