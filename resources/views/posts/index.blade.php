@@ -23,7 +23,7 @@
           <tr>
             <td>{{$post->id}}</td>
             <td>{{$post->title}}</td>
-            <td>{{$post->posted_by}}</td>
+            <td>{{$post->user ? $post->user->name : 'not found'}}</td> {{-- @if, show the posted by --}} 
             <td>{{$post->created_at}}</td>
             <td><a href="{{route('posts.show', $post->id)}}" class="btn btn-primary">View</a>
               <a href="{{route('posts.edit', $post->id)}}" class="btn btn-info">Edit</a>
